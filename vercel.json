@@ -1,0 +1,21 @@
+{
+  "builds": [
+    {
+      "src": "**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "buildCommand": "flutter build web --release --web-renderer html --no-sound-null-safety",
+  "outputDirectory": "build/web",
+  "installCommand": "flutter pub get",
+  "framework": "flutter",
+  "env": {
+    "FLUTTER_WEB": "true"
+  }
+}

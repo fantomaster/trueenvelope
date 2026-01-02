@@ -7,6 +7,8 @@ import 'recomendations.dart';
 import 'profile.dart';
 import 'login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:url_strategy/url_strategy.dart';
 
 int lang = 1;
 int theme = 1;
@@ -18,6 +20,9 @@ var name = "";
 var userId = "";  
 
 Future <void> main() async{
+   if (kIsWeb) {
+    setPathUrlStrategy(); // или setHashUrlStrategy()
+  }
   WidgetsFlutterBinding.ensureInitialized();
    try {
     await Firebase.initializeApp(
