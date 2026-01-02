@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740431591418",
+    "project_id": "bdflutter-d621c",
+    "storage_bucket": "bdflutter-d621c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740431591418:android:31e5bdd511411afa1f1643",
+        "android_client_info": {
+          "package_name": "com.example.bd_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD354ZC6tQh_Qg1HAFJEfmCSBXclGJs0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
